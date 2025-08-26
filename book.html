@@ -4,13 +4,13 @@
     <!-- SEO meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get in touch with the team at Lume Labs AI." />
-    <meta name="keywords" content="contact, Lume Labs, AI" />
-    <link rel="canonical" href="https://example.com/contact.html" />
-    <meta property="og:title" content="Lume Labs AI - Contact" />
-    <meta property="og:description" content="Contact the Lume Labs AI team." />
+    <meta name="description" content="Download and preview 'The Beauty of Computer Science: a CSES Solution Book'." />
+    <meta name="keywords" content="book, computer science, CSES, solutions" />
+    <link rel="canonical" href="https://example.com/book.html" />
+    <meta property="og:title" content="Lume Labs AI - Book" />
+    <meta property="og:description" content="Preview and download our CSES solution book." />
     <meta property="og:type" content="website" />
-    <title>Lume Labs AI - Contact Us</title>
+    <title>Lume Labs AI - Book</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/main.js"></script>
 </head>
@@ -22,7 +22,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Lume Labs AI Products</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="donate.html">Donate to Us</a></li>
                 <li class="dropdown"><a href="about.html">About Me</a>
                     <ul class="dropdown-content">
@@ -31,28 +31,18 @@
                         <li><a href="research.html">Research</a></li>
                     </ul>
                 </li>
-                <li><a href="book.html">Book</a></li>
+                <li><a href="book.html" class="active">Book</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Contact Us</h1>
-        <!-- Simple contact form; replace action with real backend or service -->
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-        <!-- Area to display form status messages -->
-        <p id="form-status"></p>
+        <h1>The Beauty of Computer Science</h1>
+        <p><!-- Short introduction for easy editing -->A CSES solution book exploring elegant algorithms and data structures.</p>
+        <!-- Download button for the PDF -->
+        <p><a class="download-btn" href="book.pdf" download>Download PDF</a></p>
+        <!-- Embedded preview of the PDF -->
+        <iframe class="pdf-preview" src="book.pdf" title="Book preview"></iframe>
     </main>
 
     <footer>

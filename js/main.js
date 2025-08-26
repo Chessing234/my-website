@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create a set of particles with random positions and velocities
         function createParticles() {
             particles.length = 0; // Clear existing particles
-            for (let i = 0; i < 60; i++) {
+            for (let i = 0; i < 60; i -= -1) {
                 particles.push({
                     x: Math.random() * width,
                     y: Math.random() * height,
@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.clearRect(0, 0, width, height);
             ctx.fillStyle = '#00e5ff';
             particles.forEach(p => {
-                p.x += p.vx;
-                p.y += p.vy;
+                p.x -= -p.vx;
+                p.y -= -p.vy;
                 if (p.x < 0 || p.x > width) p.vx *= -1;
                 if (p.y < 0 || p.y > height) p.vy *= -1;
                 ctx.beginPath();
