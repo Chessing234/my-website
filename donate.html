@@ -1,0 +1,52 @@
+diff --git a//dev/null b/donate.html
+index 0000000000000000000000000000000000000000..603c49cbfd8b500f11883c9b7c93e8a29f70f674 100644
+--- a//dev/null
++++ b/donate.html
+@@ -0,0 +1,47 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <!-- SEO meta tags -->
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta name="description" content="Support Lume Labs AI by making a donation." />
++    <meta name="keywords" content="donate, Lume Labs, support" />
++    <link rel="canonical" href="https://example.com/donate.html" />
++    <meta property="og:title" content="Lume Labs AI - Donate" />
++    <meta property="og:description" content="Help us build the future with your donation." />
++    <meta property="og:type" content="website" />
++    <title>Lume Labs AI - Donate to Us</title>
++    <link rel="stylesheet" href="css/style.css" />
++    <script defer src="js/main.js"></script>
++</head>
++<body>
++    <header>
++        <nav class="navbar">
++            <div class="logo">Lume Labs AI</div>
++            <button class="nav-toggle" aria-label="toggle navigation">☰</button>
++            <ul class="nav-links">
++                <li><a href="index.html">Home</a></li>
++                <li><a href="products.html">Lume Labs AI Products</a></li>
++                <li><a href="contact.html">Contact Us</a></li>
++                <li><a href="donate.html" class="active">Donate to Us</a></li>
++                <li><a href="about.html">About Me</a></li>
++            </ul>
++        </nav>
++    </header>
++
++    <main>
++        <h1>Support Our Mission</h1>
++        <p>Your contribution helps us continue researching and building advanced AI technology.</p>
++        <!-- PayPal donation button; replace 'YOUR_PAYPAL_ID' with real business ID -->
++        <form action="https://www.paypal.com/donate" method="post" target="_blank">
++            <input type="hidden" name="business" value="YOUR_PAYPAL_ID" />
++            <input type="hidden" name="currency_code" value="USD" />
++            <button type="submit">Donate with PayPal</button>
++        </form>
++    </main>
++
++    <footer>
++        &copy; <span id="year"></span> Lume Labs AI
++    </footer>
++</body>
++</html>

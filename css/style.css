@@ -1,0 +1,172 @@
+/* --------------------------------------------------
+   Global Styles and Reset
+   Adjust colors and fonts to match your preference
+-------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a; /* Dark futuristic background */
+    color: #ffffff; /* Default text color */
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------
+   Navigation Bar Styles
+-------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #111111;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #00e5ff; /* Neon accent color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00e5ff;
+}
+
+.nav-toggle {
+    display: none; /* Hidden on larger screens */
+    background: none;
+    border: none;
+    color: #00e5ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile navigation handling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden until toggled */
+        flex-direction: column;
+        background: #111111;
+        width: 100%;
+    }
+
+    .nav-links.show-nav {
+        display: flex; /* Shown when toggled by JavaScript */
+    }
+
+    .nav-toggle {
+        display: block; /* Show toggle button */
+    }
+}
+
+/* --------------------------------------------------
+   Hero Section Styles
+-------------------------------------------------- */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1; /* Above the canvas */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #00e5ff;
+}
+
+#sloganBtn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #00e5ff;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+#sloganDisplay {
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+/* --------------------------------------------------
+   Generic Section Styles
+-------------------------------------------------- */
+main {
+    padding: 2rem;
+}
+
+#products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background: #111111;
+    padding: 1rem;
+    border: 1px solid #00e5ff;
+    border-radius: 4px;
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #00e5ff;
+    background: #0a0a0a;
+    color: #ffffff;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #00e5ff;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111111;
+    margin-top: 2rem;
+}

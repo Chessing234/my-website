@@ -1,62 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taksh Kothari | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>🚀 Taksh Kothari</h1>
-    <p>Student | C++ Enthusiast | Future Innovator</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I’m Taksh, a student passionate about Computer Science, Mathematics,
-      and AI research. This is my portfolio website where I showcase my projects
-      and ideas.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>A simple responsive website built with HTML, CSS, and JavaScript.</p>
-    </div>
-    <div class="project-card">
-      <h3>C++ Algorithms</h3>
-      <p>Implementations of algorithms and data structures in C++.</p>
-    </div>
-    <div class="project-card">
-      <h3>Research Experiments</h3>
-      <p>Unique ISEF-inspired research in AI and Quantum Computing.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="status"></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Taksh Kothari | Built with ❤️</p>
-  </footer>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</body>
-</html>
+diff --git a//dev/null b/index.html
+index 0000000000000000000000000000000000000000..5d20f118afffe26de14fa036fdd9776da3629d3b 100644
+--- a//dev/null
++++ b/index.html
+@@ -0,0 +1,66 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <!-- Meta tags for search engine optimization -->
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <meta name="description" content="Lume Labs AI - futuristic AI solutions and products." />
++    <meta name="keywords" content="AI, Lume Labs, artificial intelligence, technology, innovation" />
++    <link rel="canonical" href="https://example.com/index.html" />
++    <meta property="og:title" content="Lume Labs AI - Home" />
++    <meta property="og:description" content="Explore futuristic AI designs and products." />
++    <meta property="og:type" content="website" />
++    <title>Lume Labs AI - Home</title>
++    <!-- Main stylesheet -->
++    <link rel="stylesheet" href="css/style.css" />
++    <!-- Main JavaScript file; loaded with defer so HTML parses first -->
++    <script defer src="js/main.js"></script>
++    <!-- Structured data for SEO using JSON-LD -->
++    <script type="application/ld+json">
++    {
++      "@context": "https://schema.org",
++      "@type": "Organization",
++      "name": "Lume Labs AI",
++      "url": "https://example.com",
++      "logo": "https://example.com/logo.png"
++    }
++    </script>
++</head>
++<body>
++    <!-- Site navigation header -->
++    <header>
++        <nav class="navbar">
++            <div class="logo">Lume Labs AI</div>
++            <!-- Button visible on small screens to toggle navigation -->
++            <button class="nav-toggle" aria-label="toggle navigation">☰</button>
++            <ul class="nav-links">
++                <li><a href="index.html">Home</a></li>
++                <li><a href="products.html">Lume Labs AI Products</a></li>
++                <li><a href="contact.html">Contact Us</a></li>
++                <li><a href="donate.html">Donate to Us</a></li>
++                <li><a href="about.html">About Me</a></li>
++            </ul>
++        </nav>
++    </header>
++
++    <main>
++        <!-- Futuristic hero section with animated background -->
++        <section class="hero">
++            <!-- Canvas used for dynamic particle animation -->
++            <canvas id="hero-canvas"></canvas>
++            <div class="hero-content">
++                <h1>Welcome to Lume Labs AI</h1>
++                <p>Building the future with cutting-edge artificial intelligence.</p>
++                <!-- Button triggers random futuristic slogan generation -->
++                <button id="sloganBtn">Generate Future Vision</button>
++                <p id="sloganDisplay"></p>
++            </div>
++        </section>
++    </main>
++
++    <!-- Footer displays the current year dynamically -->
++    <footer>
++        &copy; <span id="year"></span> Lume Labs AI
++    </footer>
++</body>
++</html>
